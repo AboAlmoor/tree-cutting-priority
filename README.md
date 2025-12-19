@@ -1,10 +1,25 @@
 # 🌲 Tree Cutting Priority Analysis - Fire Creek
 
+![Layers Visual](visual-outputs/layers-visual.png)
+
+## Assignment
+
+In this exercise, you will use the following criteria to determine a tree cutting priority for town of Fire Creek. A tree cutting priority is used to determine which dead trees should be cut down first. This information will be used to efficiently assign the limited tree removal resources. You will determine the tree cutting priority base on the following five factors:
+- Tree mortality
+- community features
+- egress routes
+- populated areas
+- and electric utilities.
+You will combine all the factors to determine the overall tree cutting priority for fire creek. A cutting grid feature has been created for the town of Fire creek. The final output of this exercise will be a GRID divided into zones based on the cutting feature class. Each zone will have a tree cutting priority value.
+Following the spatial analysis framework used in the first project in order to undertake the spatial analysis.
+
+---
+
 [![Python](https://img.shields.io/badge/Python-3.8+-blue.svg)](https://www.python.org/downloads/)
 [![GeoPandas](https://img.shields.io/badge/GeoPandas-1.0+-green.svg)](https://geopandas.org/)
 [![License](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
 
-> **Spatial Data Analysis - Homework 2**  
+> **Spatial Data Analysis - Homework 3**  
 > Multi-criteria decision analysis (MCDA) for wildfire risk mitigation through strategic tree cutting prioritization.
 
 ---
@@ -54,34 +69,37 @@ This project identifies and prioritizes tree cutting zones for wildfire risk mit
 
 ```
 tree-cutting-priority/
-├── tree_data/                      # Input shapefiles
-│   ├── CuttingGrids.shp           # Main analysis grid (80 zones)
-│   ├── SBNFMortalityt.shp         # Tree mortality data
-│   ├── Communityfeatures.shp      # Community infrastructure
-│   ├── EgressRoutes.shp           # Evacuation routes
-│   ├── PopulatedAreast.shp        # Populated areas
-│   ├── Transmission.shp           # High-voltage lines
-│   ├── SubTransmission.shp        # Sub-transmission lines
-│   ├── DistCircuits.shp           # Distribution circuits
-│   ├── Substations.shp            # Power substations
-│   ├── PoleTopSubs.shp            # Pole-top substations
-│   └── TownBoundary.shp           # Town boundary reference
+├── tree_data/                  
+│   ├── CuttingGrids.shp          
+│   ├── SBNFMortalityt.shp       
+│   ├── Communityfeatures.shp     
+│   ├── EgressRoutes.shp           
+│   ├── PopulatedAreast.shp       
+│   ├── Transmission.shp         
+│   ├── SubTransmission.shp       
+│   ├── DistCircuits.shp          
+│   ├── Substations.shp            
+│   ├── PoleTopSubs.shp           
+│   └── TownBoundary.shp           
 │
-├── output/                         # Generated outputs
-│   ├── TreeCuttingPriority_*.shp  # Priority shapefile (timestamped)
-│   ├── TreeCuttingPriority_*.gpkg # GeoPackage output (timestamped)
-│   ├── TreeCuttingPriority_v2.shp # Latest version shapefile
-│   ├── TreeCuttingPriority_v2.gpkg# Latest version GeoPackage
-│   └── TreeCuttingPriority_Charts.png  # Visualization charts
+├── output/                         
+│   ├── TreeCuttingPriority_*.shp  
+│   ├── TreeCuttingPriority_*.gpkg 
+│   ├── TreeCuttingPriority_v2.shp 
+│   ├── TreeCuttingPriority_v2.gpkg
+│   └── TreeCuttingPriority_Charts.png  
 │
-├── visual-outputs/                 # Additional visualizations
-│   ├── layers-names.png           # Layer name reference
-│   └── layers-visual.png          # Visual layer overview
+├── visual-outputs/                 
+│   ├── layers-names.png           
+│   └── layers-visual.png          
 │
-├── report/                         # Analysis reports (future use)
+├── report/
+│   ├── tree-cutting-priority-report.docx         
+│   └── tree-cutting-priority-report.pdf                 
 │
-├── tree_cutting_priority.py       # Main analysis script
-└── README.md                       # This file
+├── tree-cutting-priorty-analysis.png 
+├── tree_cutting_priority.py       
+└── README.md                       
 ```
 
 ---
@@ -96,7 +114,7 @@ tree-cutting-priority/
 ### Step 1: Clone the Repository
 
 ```bash
-git clone https://github.com/yourusername/tree-cutting-priority.git
+git clone https://github.com/AboAlmoor/tree-cutting-priority.git
 cd tree-cutting-priority
 ```
 
@@ -513,8 +531,7 @@ In [tree_cutting_priority.py](tree_cutting_priority.py), adjust the weights for 
 - **Bara Mhana**
 
 **Course:** Spatial Data Analysis  
-**Assignment:** Homework 2 - Tree Cutting Priority Analysis  
-**Institution:** [Your Institution]  
+**Assignment:** Homework 3 - Tree Cutting Priority Analysis  
 **Date:** December 2025
 
 ---
@@ -522,29 +539,6 @@ In [tree_cutting_priority.py](tree_cutting_priority.py), adjust the weights for 
 ## 📄 License
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
-
----
-
-## 🙏 Acknowledgments
-
-- **San Bernardino National Forest (SBNF)** for providing tree mortality data
-- **Fire Creek Community** for infrastructure and boundary data
-- **Course Instructors** for guidance and support throughout the project
-- **GeoPandas Development Team** for the excellent spatial analysis library
-
----
-
-## 🚀 Future Enhancements
-
-Potential improvements for future versions:
-
-- [ ] Add temporal analysis for tracking priority changes over time
-- [ ] Implement machine learning for predictive risk modeling
-- [ ] Create interactive web map using Folium or Plotly
-- [ ] Add cost-benefit analysis for prioritization
-- [ ] Include weather and climate data integration
-- [ ] Develop automated report generation with PDF output
-- [ ] Add API for real-time data updates
 
 ---
 
