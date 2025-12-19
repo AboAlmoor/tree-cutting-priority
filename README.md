@@ -534,16 +534,4 @@ In [tree_cutting_priority.py](tree_cutting_priority.py), adjust the weights for 
 **Assignment:** Homework 3 - Tree Cutting Priority Analysis  
 **Date:** December 2025
 
----
-
-## 📄 License
-
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
-
----
-
-<p align="center">
-  Made with ❤️ for Spatial Data Analysis<br>
-  🌲 Protecting Communities, One Tree at a Time 🌲
-</p>
 
